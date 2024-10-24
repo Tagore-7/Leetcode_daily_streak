@@ -63,7 +63,7 @@ class Solution:
         while queue:
             for _ in range(len(queue)):
                 node, val = queue.popleft()
-                node.val = level_sum[level] - node.val 
+                node.val = level_sum[level] - val 
                 child_sum = 0
 
                 if node.left:
